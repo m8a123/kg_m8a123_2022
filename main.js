@@ -19,3 +19,5 @@ function converter(s){
     }
     return res;
 }
+
+console.log(converter('209'))
