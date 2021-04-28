@@ -27,4 +27,14 @@ var myArgs = process.argv.slice(2);
 // maps converter function on array of args.
 var map = myArgs.map(s => converter(s));
 
-console.log(map);
+// add converted arguments from mapped array to empty string with comma in between until the last one for standardized output.
+var ans = "";
+for (var j = 0; j < map.length; j++){
+    ans += map[j];
+    if (j != map.length-1){
+        ans += ",";
+    }
+}
+
+// finally, output resulting string.
+console.log(ans);
