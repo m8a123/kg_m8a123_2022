@@ -37,4 +37,10 @@ for (var j = 0; j < map.length; j++){
 }
 
 // finally, output resulting string.
-console.log(ans);
+// check if bad input
+if (ans == "" || ans.includes("undefined")){
+    throw new Error('Input must only contain numbers and cannot be empty');
+}
+else {
+    console.log(ans);
+}
